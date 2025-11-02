@@ -23,10 +23,10 @@ func HasTheWords(commentStr string) bool {
 			hasThinking = true
 		}
 
-		if hasBrain && hasThinking {
+		if hasBrain || hasThinking {
 			break
 		}
 	}
 
-	return hasBrain && hasThinking
+	return hasBrain || hasThinking
 }
